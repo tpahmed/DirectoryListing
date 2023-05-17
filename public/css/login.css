@@ -1,0 +1,270 @@
+
+.Login-Container{
+    position: absolute;
+    background-color: var(--Primary);
+    margin-top: 3em;
+    width: 30em;
+    min-width: 30%;
+    height: fit-content;
+    border-radius: .4em;
+    user-select: none;
+    left: 50%;
+    box-shadow: 15px 5px 5px var(--Black-Tranparent);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
+
+.Login-Container > form{
+    position: relative;
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Login-Container > form input{
+    border: 0;
+    border: 2px solid var(--Secondary);
+    background-color: var(--Secondary-Tranparent);
+    color: var(--Secondary);
+    padding-left: .3em;
+    font-weight: 300;
+    margin: 1em;
+    width: 20em;
+    max-width: 70%;
+    height: 2.1em;
+    font-size: large;
+    border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
+
+.Login-Container > form input:focus{
+    outline: 0;
+}
+#Login-forgotpass{
+    position: relative;
+    align-self: flex-end;
+    right: 17%;
+}
+.Login-Container > form div{
+    margin-top: -1em;
+    font-size: .7em;
+    color: var(--Secondary);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.Login-Container > form button{
+    position: relative;
+    border: 0;
+    border: 2px solid var(--Secondary);
+    background-color: var(--Secondary-Tranparent);
+    cursor: pointer;
+    transition: all .3s ease;
+    color: var(--Secondary);
+    font-family: var(--Title-Font);
+    font-size: larger;
+    margin: 1em;
+    width: 12em;
+    max-width: 70%;
+    height: 1.8em;
+    border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.Login-Container > form button:hover{
+    color: var(--Primary);
+}
+
+.Login-Container > form button::before{
+    content: '';
+    position: absolute;
+    transition: all .3s ease;
+    z-index: -1;
+
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--Secondary);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.Login-Container > form button:hover::before{
+    height: 100%;
+
+}
+
+.Login-Container > form label{
+    align-self: first baseline;
+    position: relative;
+    font-family: var(--Title-Font);
+    color: var(--Secondary);
+    font-size: larger;
+    left: 17%;
+}
+
+.Login-Separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Login-Separator > hr{
+    width: 40%;
+    border: 0;
+    background-color: var(--Secondary);
+    height: 2px;
+
+}
+.Login-Separator > span{
+    font-family: var(--Title-Font);
+    color: var(--Secondary);
+    padding: 1em;
+}
+
+.Login-Altrenatives{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 11em;
+    margin-bottom: 1.5em;
+}
+
+.Login-Altrenatives > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .3s ease;
+    width: 20em;
+    max-width: 70%;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.Login-Altrenatives > div span{
+    font-family: var(--Title-Font);
+    margin-left: 1.5em;
+}
+
+#Login-FaceBook{
+    border: 2px solid #039BE5;
+    color: #039BE5;
+}
+#Login-FaceBook:hover{
+    background-color: #039BE5;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#Login-Google{
+    position: relative;
+    border-top: 2px solid #FF3D00;
+    border-left: 2px solid #FFC107;
+    border-bottom: 2px solid #4CAF50;
+    border-right: 2px solid #1976D2;
+    background: linear-gradient(to right,#FF3D00, #FFC107,#4CAF50,#1976D2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#Login-Google::before{
+    transition: all .3s ease;
+    content: '';
+    position: absolute;
+    background: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-clip: 0;
+    border-radius: .4em;
+    z-index: -1;
+    -webkit-background-clip: 0;
+    -webkit-text-fill-color: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
+#Login-Google:hover::before{
+    background-image: linear-gradient(to right,#FF3D00, #FFC107,#4CAF50,#1976D2);
+}
+#Login-Google:hover{
+    border: 0;
+    z-index: 20;
+    border: 2px solid #FFFFFF;
+    -webkit-text-fill-color: white;
+}
+#Login-Apple{
+    border: 2px solid #000000;
+}
+#Login-Apple:hover{
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+#Login-Apple img{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+#Login-Apple:hover img{
+    filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(69deg) brightness(103%) contrast(102%);
+}
+
+
+@media screen and (max-width: 1160px) {
+    .Login-Container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Login-Container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .Login-Container{
+        width: 100%;
+    }
+}

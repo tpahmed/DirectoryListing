@@ -1,0 +1,143 @@
+
+.SignUp-Container{
+    position: absolute;
+    background-color: var(--Primary);
+    user-select: none;
+    margin-top: 3em;
+    width: 30em;
+    min-width: 30%;
+    height: fit-content;
+    border-radius: .4em;
+    left: 50%;
+    box-shadow: 15px 5px 5px var(--Black-Tranparent);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
+
+.SignUp-Container > form{
+    position: relative;
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SignUp-Container > form input{
+    border: 0;
+    border: 2px solid var(--Secondary);
+    background-color: var(--Secondary-Tranparent);
+    color: var(--Secondary);
+    padding-left: .3em;
+    font-weight: 300;
+    margin: 1em;
+    width: 20em;
+    max-width: 70%;
+    height: 2.1em;
+    font-size: large;
+    border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
+
+.SignUp-Container > form input:focus{
+    outline: 0;
+}
+.SignUp-Container > form div{
+    margin-top: -1em;
+    font-size: .7em;
+    color: var(--Secondary);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.SignUp-Container > form button{
+    position: relative;
+    border: 0;
+    border: 2px solid var(--Secondary);
+    background-color: var(--Secondary-Tranparent);
+    cursor: pointer;
+    transition: all .3s ease;
+    color: var(--Secondary);
+    font-family: var(--Title-Font);
+    font-size: larger;
+    margin: 1em;
+    width: 12em;
+    max-width: 70%;
+    height: 1.8em;
+    border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.SignUp-Container > form button:hover{
+    color: var(--Primary);
+}
+
+.SignUp-Container > form button::before{
+    content: '';
+    position: absolute;
+    transition: all .3s ease;
+    z-index: -1;
+
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--Secondary);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.SignUp-Container > form button:hover::before{
+    height: 100%;
+
+}
+
+.SignUp-Container > form label{
+    align-self: first baseline;
+    position: relative;
+    font-family: var(--Title-Font);
+    color: var(--Secondary);
+    font-size: larger;
+    left: 17%;
+}
+
+
+@media screen and (max-width: 1160px) {
+    .SignUp-Container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .SignUp-Container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .SignUp-Container{
+        width: 100%;
+    }
+}

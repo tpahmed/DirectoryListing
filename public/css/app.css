@@ -1,0 +1,44 @@
+:root{
+    --Primary: #E8F5F5;
+    --Secondary: #3595E5;
+    --Secondary-Tranparent: #3595E533;
+    --Black: #151515;
+    --Black-Tranparent: #151515AA;
+    --White: #F0F0F0;
+    --Red: #F3414E;
+    --Light-Red: #F3B1BE;
+    --Title-Font: 'SimplyMono';
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Sono';
+}
+
+
+
+.Flash-Error{
+    border: 2px solid var(--Light-Red);
+    background-color: var(--Red);
+    margin-top: 1em !important;
+    color: var(--Light-Red) !important;
+    border-radius: .4em;
+    display: flex;
+    padding: 0 .3em .3em .3em !important;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: fit-content;
+    min-height: 6em;
+    cursor: default !important;
+    font-size: .8em !important;
+    font-family: var(--Title-Font);
+    white-space: pre-line;
+    text-decoration: none !important;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
