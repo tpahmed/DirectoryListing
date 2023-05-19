@@ -13,6 +13,8 @@ class Account extends Authenticatable
         'name',
         'email',
         'password',
+        'google_id',
+        'facebook_id',
       ];
     public function PassRecoveries(): HasMany
     {

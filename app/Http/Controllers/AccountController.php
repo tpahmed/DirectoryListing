@@ -13,6 +13,7 @@ use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+use Laravel\Socialite\Facades\Socialite;
 
 class AccountController extends Controller
 {
@@ -106,6 +107,38 @@ class AccountController extends Controller
         $AccsWithSameEmail->first()->save();
         auth()->login($AccsWithSameEmail->first());
 
+        return redirect('/');
+    }
+
+    public function facebook()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+    public function facebookRe()
+    {
+        $acc = Socialite::driver('facebook')->user();
+        $current_Acc = Account::updateOrCreate(['name'=>$acc->name,'email'=>$acc->email,'facebook_id'=>$acc->id]);
+        auth()->login($current_Acc);
+        return redirect('/');
+    }
+
+    public function google()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+    public function googleRe()
+    {
+        $acc = Socialite::driver('google')->user();
+        $AccsWithSameEmail = Account::where('email','=',$acc->email)->get();
+        if(count($AccsWithSameEmail)){
+            $AccsWithSameEmail->first()->google_id = $acc->id;
+            $AccsWithSameEmail->first()->save();
+            auth()->login($AccsWithSameEmail->first());
+
+            return redirect('/');
+        }
+        $current_Acc = Account::create(['name'=>$acc->name,'email'=>$acc->email,'google_id'=>$acc->id]);
+        auth()->login($current_Acc);
         return redirect('/');
     }
 

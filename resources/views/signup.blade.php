@@ -26,9 +26,8 @@
             <hr>
         </div>
         <div class="Login-Altrenatives">
-            <div id="Login-FaceBook"> <img src="{{ asset('icons/facebook.svg') }}" alt="FaceBook" width="40px"> <span>Connect With FaceBook</span> </div>
-            <div id="Login-Google"> <img src="{{ asset('icons/google.svg') }}" alt="Google" width="40px"> <span>Connect With Google</span> </div>
-            <div id="Login-Apple"> <img src="{{ asset('icons/apple.svg') }}" alt="Apple" width="40px"> <span>Connect With Apple</span> </div>
+            {{-- <div id="Login-FaceBook" onclick="window.location=`{{ route('perfom_loginfacebook') }}`"> <img src="{{ asset('icons/facebook.svg') }}" alt="FaceBook" width="40px"> <span>Connect With FaceBook</span> </div> --}}
+            <div id="Login-Google" onclick="window.location=`{{ route('perfom_logingoogle') }}`"> <img src="{{ asset('icons/google.svg') }}" alt="Google" width="40px"> <span>Connect With Google</span> </div>
         </div>
     </div>
 @endsection

@@ -12,6 +12,9 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
+        //check that app is local
+        // $this->app->register('Barryvdh\Debugbar\ServiceProvider');
+        // $this->app['request']->server->set('HTTPS', true);
     }
 
     /**
@@ -20,5 +23,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+        // \Illuminate\Support\Facades\URL::forceScheme("https");
+        // if(env('APP_ENV') === 'production') {
+        // }
     }
 }

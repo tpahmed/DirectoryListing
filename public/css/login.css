@@ -151,7 +151,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 11em;
+    height: fit-content;
     margin-bottom: 1.5em;
 }
 

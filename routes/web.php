@@ -22,6 +22,10 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::post('/login', [\App\Http\Controllers\AccountController::class,'Login'])->name('perfom_login');
+Route::get('/login/facebook', [\App\Http\Controllers\AccountController::class,'facebook'])->name('perfom_loginfacebook');
+Route::get('/login/facebook/re', [\App\Http\Controllers\AccountController::class,'facebookRe']);
+Route::get('/login/google', [\App\Http\Controllers\AccountController::class,'google'])->name('perfom_logingoogle');
+Route::get('/login/google/re', [\App\Http\Controllers\AccountController::class,'googleRe']);
 
 Route::get('/signup', function () {
     if (Auth::check()){

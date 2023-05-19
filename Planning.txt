@@ -1,0 +1,28 @@
+Web Directory:
+	basic features : 
+			User Account : Allow users to create accounts and personalize their profiles.
+			
+			Search :  Allow users to Search with keywords, categories, locations.
+	
+			Add Listing : Give posiblity to small and big businesses to submit their listings.
+
+			Categories : Organize Listing to facilitate the search feature and for better user experience.
+
+			Map : Adding A map for better location representation.
+			
+			Reviews and Ratings : Give User ability to leave a comment about a listing.
+
+			Social Sharing : Adding option to share in social media.
+
+			Favorite List : Make a favorite mark on every listing so the user can save his favorite Listings.
+			
+			Advertising : Give posiblity to businesses to pay for more recommendation and better listing personalisation
+
+			Support : make a support section for users to seek help for their technical problems with the application
+
+			Mobile Responsiveness : make the app relevent for mobile users and smaller screens.
+
+			Admin Page : give admins a private web page to controll the listings and to recieve support messages and Advertising requests with some analytics
+
+			
+			
